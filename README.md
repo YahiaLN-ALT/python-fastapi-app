@@ -1,8 +1,9 @@
 # FastAPI Starter
 
-A minimal, production‑leaning FastAPI template with testing (coverage), linting/formatting, Docker, and CI. Ships with a root endpoint and a health check.
+A minimal, production‑leaning FastAPI template with testing (coverage), linting/formatting, Docker, and CI. Ships with a root endpoint and a health check test.
 
 ## Features
+
 - FastAPI + Uvicorn
 - Pydantic Settings for configuration management
 - Custom logging with TRACE level support
@@ -11,10 +12,12 @@ A minimal, production‑leaning FastAPI template with testing (coverage), lintin
 - Dockerfile and GitHub Actions CI (Python 3.13)
 
 ## Endpoints
+
 - `GET /` → `{ "message": "the server is now active" }`
 - `GET /health` → `{ "ok": true }`
 
 ## Quick Start
+
 ```bash
 python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements-dev.txt

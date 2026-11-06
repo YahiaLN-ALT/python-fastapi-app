@@ -1,0 +1,13 @@
+name: Déclenchement sur Tag
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  tag-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Déclenché par un tag
+        run: echo "Nouveau tag poussé ; ${{ github.ref_name }}"
