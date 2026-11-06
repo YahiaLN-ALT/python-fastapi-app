@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-'''comment'''
+
 from .config import settings
 
 app = FastAPI(
